@@ -1,0 +1,15 @@
+.login_div {
+  padding: 30px;
+}
+.login_here {
+  display: flex;
+}
+.login_here p {
+  margin: 0;
+}
+.login_here p a {
+  color: #000000;
+  font-weight: 600;
+  text-decoration: underline;
+  margin-left: 5px;
+}

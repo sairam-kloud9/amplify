@@ -1,13 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./Components/Header";
+import Home from "./Components/Home/Home";
+import { Switch, Route } from "react-router-dom";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Hello from V2</h1>
-      </header>
+      <Header />
+      <Switch>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+      <Footer />
     </div>
   );
 }
